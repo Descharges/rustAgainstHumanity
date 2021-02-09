@@ -11,3 +11,4 @@ fn main() {
     let newCard = Card::white(String::from("Les juifs"));
     newCard.PrOnXt();
 }
+
