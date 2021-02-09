@@ -1,0 +1,1 @@
+/home/paul/Projets/rust_bullshit/rustAgainstHumanity/target/debug/rustAgainstHumanity: /home/paul/Projets/rust_bullshit/rustAgainstHumanity/src/main.rs /home/paul/Projets/rust_bullshit/rustAgainstHumanity/src/structures.rs
