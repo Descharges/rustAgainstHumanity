@@ -5,10 +5,12 @@
 
 mod structures;
 use structures::Card;
+use structures::Player;
 
 fn main() {
     println!("Hello World");
     let newCard = Card::white(String::from("Les juifs"));
     newCard.PrOnXt();
+    let p1 = Player::new(1,String::from("Paul"));
+    let truc: i16 = 0xFFF;
 }
-

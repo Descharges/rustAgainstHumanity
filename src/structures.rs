@@ -1,3 +1,4 @@
+
 pub struct Player{
 	id :i8,
 	name: String,
@@ -6,9 +7,15 @@ pub struct Player{
 }
 
 impl Player{
-	pub fn NiOu(){
-		let mut
-
+    pub fn new(id:i8, name: String) -> Player {
+        Player{
+            id,
+            name,
+            hand: Vec::new(),
+            score: 0,
+        }
+    }
+}
 
 pub enum Card{
     white(String),
