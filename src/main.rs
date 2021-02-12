@@ -8,9 +8,13 @@ use structures::Card;
 use structures::Player;
 
 fn main() {
-    println!("Hello World");
+    let mut p1 = Player::new(1,String::from("Paul"));
     let newCard = Card::white(String::from("Les juifs"));
-    newCard.PrOnXt();
-    let p1 = Player::new(1,String::from("Paul"));
-    let truc: i16 = 0xFFF;
+    p1.awddCawd(newCard);
+    let newCard = Card::white(String::from("Hitler"));
+    p1.awddCawd(newCard);
+    let newCard = Card::white(String::from("Ma bite"));
+    p1.awddCawd(newCard);
+    p1.pwintCawds();
+    p1.destrowyewr();
 }
