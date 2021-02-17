@@ -53,6 +53,8 @@ pub struct playField<'a>{
 	whiteCard: Vec<(&'a Player, Card)>
 }
 
-impl playField{
-	pub fn gewtCawd(&self, &player: Player, card:Card)
+impl <'a> playField<'a>{
+    pub fn gewtCawd(&mut self, player: &'a Player, card:Card){
+       self.whiteCard.push((player,card))
+    }
 }
