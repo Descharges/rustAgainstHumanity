@@ -64,4 +64,19 @@ impl <'a> playField<'a>{
 			None => println!("Wopsie doopsie, youw progwam is a biwt fuckwed uwp UwU"),
 		}
 	}
+    pub fn gewtBlawkCawd(&mut self){
+        let card = self.blackDeck.pop();
+		match card {
+			Some(c) => self.blackCard = c,
+			None => println!("Wopsie doopsie, youw progwam is a biwt fuckwed uwp UwU"),
+        }
+    }
+    pub fn pwintBlawkCawd(& self){
+        self.blackCard.pwint();
+    }
+    pub fn pwintWhiteCawds(&self){
+        for tuple in &self.whiteCard{
+            tuple.1.pwint();
+        }
+    }
 }
