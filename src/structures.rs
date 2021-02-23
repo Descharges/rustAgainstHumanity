@@ -57,4 +57,11 @@ impl <'a> playField<'a>{
     pub fn gewtCawd(&mut self, player: &'a Player, card:Card){
        self.whiteCard.push((player,card))
     }
+	pub fn deawlCawd(&mut self, player: &'a mut Player, card: Card){
+		let card = self.whiteDeck.pop();
+		match card {
+			Some(c) => player.hand.push(c),
+			None => println!("Wopsie doopsie, youw progwam is a biwt fuckwed uwp UwU"),
+		}
+	}
 }
