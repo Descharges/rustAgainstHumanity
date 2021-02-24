@@ -1,22 +1,18 @@
 //twis file is uwusing Uwucase
-
-use std::env;
-use std::fs;
+use std::io::{self, BufReader};
+use std::io::prelude::*;
+use std::fs::File;
 
 mod structures as struc;
 use struc::Card;
 use struc::playField;
 
 pub fn gewtcontewnt (input : str, playfield : &mut playField) {
-	let contents = fs::read_to_string(input)
-        .expect("Something went wrong reading the file");
-    
-    for c in &contents.chars(){
-    	do{
-    	let buffer = buffer + c
-		while(c != '$'){
-			while (c!='\n'){
-				
-			
-			
-
+	let f = File::open(input)
+        .expect("Something went wong weading the file");
+    let f = BufReader::new(f);
+	let white:bool = true;
+	for line in f.lines(){
+		println(line.unwarp());
+	}
+}
